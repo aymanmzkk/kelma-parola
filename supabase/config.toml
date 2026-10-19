@@ -1,0 +1,8 @@
+project_id = "kelma-parola"
+
+# Both functions check the caller themselves (user token / cron secret).
+[functions.send-push]
+verify_jwt = false
+
+[functions.daily-reminders]
+verify_jwt = false
